@@ -1,0 +1,6 @@
+framework module ZYAdSDK {
+  umbrella header "ZYAdSDK.h"
+
+  export *
+  module * { export * }
+}
