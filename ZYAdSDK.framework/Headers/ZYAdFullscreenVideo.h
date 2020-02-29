@@ -69,4 +69,6 @@
 - (void)fullscreenVideoDidClick:(ZYAdFullscreenVideo *_Nullable)ad;
 //Video 已关闭
 - (void)fullscreenVideoDidClose:(ZYAdFullscreenVideo *_Nullable)ad;
+//Video 播放完成
+- (void)fullscreenVideoDidComplete:(ZYAdFullscreenVideo *_Nullable)ad;
 @end
