@@ -59,16 +59,16 @@
 
 @protocol ZYAdFullscreenVideoDelegate <NSObject>
 @optional
-//Video 加载成功
+//FullscreenVideo 加载成功
 - (void)fullscreenVideoDidLoad:(ZYAdFullscreenVideo *_Nullable)ad;
-//Video 加载失败 
+//FullscreenVideo 加载失败
 - (void)fullscreenVideoDidFail:(ZYAdFullscreenVideo *_Nullable)ad withError:(NSError *_Nullable)error;
-//Video 展示成功
+//FullscreenVideo 展示成功
 - (void)fullscreenVideoDidShow:(ZYAdFullscreenVideo *_Nullable)ad;
-//Video 被点击
+//FullscreenVideo 被点击
 - (void)fullscreenVideoDidClick:(ZYAdFullscreenVideo *_Nullable)ad;
-//Video 已关闭
+//FullscreenVideo 已关闭
 - (void)fullscreenVideoDidClose:(ZYAdFullscreenVideo *_Nullable)ad;
-//Video 播放完成
+//FullscreenVideo 播放完成
 - (void)fullscreenVideoDidComplete:(ZYAdFullscreenVideo *_Nullable)ad;
 @end

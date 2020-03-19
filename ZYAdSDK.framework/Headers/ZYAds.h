@@ -16,12 +16,12 @@ typedef NS_ENUM(NSInteger,ZYPublishZone) {
 
 typedef void (^ZYConfigurateCompletionHandler)(BOOL success,NSError * _Nullable error);
 
-//当前sdk版本
-extern NSString * _Nullable ZYAdSDKVersion;
-
-
 @interface ZYAds : NSObject
 + (instancetype)sharedInstance;
+/**
+ sdk版本
+ */
+@property (nonatomic, copy, readonly) NSString *sdkVersion;
 
 #pragma mark - 测试用到参数
 /**

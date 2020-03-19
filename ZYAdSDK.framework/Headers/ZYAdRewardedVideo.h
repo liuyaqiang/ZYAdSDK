@@ -59,16 +59,16 @@
 
 @protocol ZYAdRewardedVideoDelegate <NSObject>
 @optional
-//Video 加载成功
+//RewardedVideo 加载成功
 - (void)rewardedVideoDidLoad:(ZYAdRewardedVideo *_Nullable)ad;
-//Video 加载失败 
+//RewardedVideo 加载失败
 - (void)rewardedVideoDidFail:(ZYAdRewardedVideo *_Nullable)ad withError:(NSError *_Nullable)error;
-//Video 展示成功
+//RewardedVideo 展示成功
 - (void)rewardedVideoDidShow:(ZYAdRewardedVideo *_Nullable)ad;
-//Video 被点击
+//RewardedVideo 被点击
 - (void)rewardedVideoDidClick:(ZYAdRewardedVideo *_Nullable)ad;
-//Video 已关闭
+//RewardedVideo 已关闭
 - (void)rewardedVideoDidClose:(ZYAdRewardedVideo *_Nullable)ad;
-//Video 播放完成 ，此处可给用户奖励等操作
+//RewardedVideo 播放完成 ，此处可给用户奖励等操作
 - (void)rewardedVideoDidComplete:(ZYAdRewardedVideo *_Nullable)ad;
 @end
