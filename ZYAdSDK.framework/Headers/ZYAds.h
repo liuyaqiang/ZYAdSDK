@@ -29,17 +29,17 @@ typedef void (^ZYConfigurateCompletionHandler)(BOOL success,NSError * _Nullable 
  */
 @property (nonatomic, assign) BOOL logEnable;
 /**
-是否是测试环境，默认为NO，请在configurateWithAppkey: completionHandler：之前设置
+添加测试设备，转测试环境（打开日志，搜索testDeviceId添加），请在configurateWithAppkey: completionHandler：之前设置
  */
-@property (nonatomic, assign) BOOL isTestEnvironment;
+@property (nonatomic, strong) NSArray<NSString *> *testDevices;
 /**
  admob设置测试设备，请在configurateWithAppkey: completionHandler：之前设置
  */
-@property (nonatomic, strong) NSArray *admobTestDevices;
+@property (nonatomic, strong) NSArray<NSString *> *admobTestDevices;
 /**
  facebook设置测试设备，请在configurateWithAppkey: completionHandler：之前设置
  */
-@property (nonatomic, strong) NSArray *facebookTestDevices;
+@property (nonatomic, strong) NSArray<NSString *> *facebookTestDevices;
 
 #pragma mark - 配置
 /**
